@@ -1,20 +1,18 @@
 <template>
   <div>
     <b-row class="my-2 mx-0">
-      <b-col cols="12" sm="6">
+      <b-col cols="12" sm="6" md="5" lg="4">
         <b-input-group>
           <b-form-input
             v-model="filterQuery"
             placeholder="Filter..."
           ></b-form-input>
-          <b-input-group-append>
-            <b-button variant="primary">
-              <b-icon-search />
-            </b-button>
+          <b-input-group-append is-text>
+            <b-icon-search />
           </b-input-group-append>
         </b-input-group>
       </b-col>
-      <b-col cols="12" sm="6" class="text-right">
+      <b-col cols="12" sm="6" md="7" lg="8" class="text-right">
         <b-button variant="primary" @click="openModal()">
           <span class="d-flex align-items-center">
             Create new <b-icon-plus />
@@ -27,6 +25,7 @@
       striped
       hover
       responsive
+      sort-icon-left
       :filter="filterQuery"
       :busy="loadingMediaRecords"
       :items="mediaRecords"

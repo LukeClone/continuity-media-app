@@ -2,7 +2,9 @@
 
 Single SPA aplication for displaying media records. 
 
-For connection to real API you have to replace `apiCall` fn with some http client (fetch, axios, etc). App is bundled in `dist/` folder for demonstration purposes only.
+For connection to real API you have to replace `apiCall` fn in `mediaRecordsService.js` with some http client (fetch, axios, etc). `apiCall` simulates http client by adding timeouted Promise with one can fail as well as real-world API.
+
+App is bundled in `dist/` folder for demonstration purposes only.
 
 ## List of available commands
 

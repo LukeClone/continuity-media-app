@@ -129,9 +129,6 @@ export default {
         this.errors.push("Release year must be a number");
       }
 
-      console.log(Number.isNaN(this.form.numberOfDiscs));
-      console.log(this.errors, this.form.numberOfDiscs);
-
       if (this.errors.length) {
         return;
       }
