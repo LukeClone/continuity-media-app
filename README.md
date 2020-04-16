@@ -6,6 +6,8 @@ For connection to real API you have to replace `apiCall` fn in `mediaRecordsServ
 
 App is bundled in `dist/` folder for demonstration purposes only.
 
+Preffered build engine: Node v12  
+
 ## List of available commands
 
 ## Project 
